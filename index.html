@@ -43,62 +43,6 @@
 
 }
 
-/* Footer responsive tweaks: make footer columns stack and center on small screens */
-table [class=footer-col] { display:inline-block; vertical-align:top; }
-
-@media only screen and (max-width:640px)
-{
-  table [class=footer-col] { display:block !important; width:100% !important; text-align:center !important; padding-bottom:18px !important; }
-  table [class=footer-col] td { text-align:center !important; }
-  table [class=footer-col] table { margin:0 auto !important; float:none !important; }
-  img[class="image-full"] { max-width:100% !important; height:auto !important; }
-}
-
-@media only screen and (max-width:479px)
-{
-  table [class=footer-col] { display:block !important; width:100% !important; text-align:center !important; padding-bottom:16px !important; }
-  table [class=footer-col] td { text-align:center !important; }
-}
-
-/* Email-friendly and extra responsive rules */
-/* Make images safe for email clients and ensure they scale */
-img { display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
-img[width] { height:auto !important; max-width:100% !important; }
-
-/* utility classes so we can target hero/body */
-.hero-title { font-size:60px; line-height:60px; color:#ffffff; font-weight:700; }
-.hero-sub { font-size:16px; line-height:20px; color:#ffffff; text-transform:uppercase; font-weight:700; }
-.greeting { font-size:36px; line-height:40px; color:#222222; font-weight:700; }
-.body-text { font-size:15px; line-height:22px; color:#6c6969; text-align:left; }
-
-/* Make sure logos and small icons are centered on mobile */
-img.logo { display:block; margin:0 auto; }
-
-@media only screen and (max-width:640px)
-{
-  /* Stack two-column blocks and center their content */
-  td[class="two-left"] { display:block !important; width:100% !important; }
-  table[class="two-left-inner"] { width:90% !important; margin:0 auto !important; }
-
-  /* Center text blocks for narrow screens */
-  .hero-title, .hero-sub, .greeting, .body-text { text-align:center !important; }
-  .body-text { padding-left:6px !important; padding-right:6px !important; }
-
-  /* Reduce hero sizes for smaller devices */
-  .hero-title { font-size:36px !important; line-height:42px !important; }
-  .greeting { font-size:28px !important; line-height:34px !important; }
-
-  /* Footer columns: keep stacked and centered */
-  table [class=footer-col] { display:block !important; width:100% !important; text-align:center !important; }
-}
-
-@media only screen and (max-width:479px)
-{
-  .hero-title { font-size:28px !important; line-height:34px !important; }
-  .hero-sub { font-size:12px !important; }
-  .body-text { font-size:14px !important; line-height:20px !important; text-align:center !important; }
-}
-
 		
 		</style>
 
@@ -117,10 +61,10 @@ img.logo { display:block; margin:0 auto; }
         <td align="center" valign="top"><table width="600" border="0" align="center" cellpadding="0" cellspacing="0" class="two-left-inner">
           <tr>
             <td height="80" align="center" valign="middle" style="font-size:80px; line-height:80px;">&nbsp;</td>
-          <tr>
-            <td class="greeting" align="center" valign="top" style="font-family: 'Open Sans', sans-serif;" mc:edit="fm-39"><multiline>Hello <br />
-              {{CustomerName}}</multiline></td> 
           </tr>
+        </table></td>
+      </tr>
+    </table></td>
   </tr>
 </table>
 
@@ -135,7 +79,7 @@ img.logo { display:block; margin:0 auto; }
                 <td height="25" align="center" valign="top" style="font-size:25px; line-height:25px;">&nbsp;</td>
               </tr>
               <tr>
-                <td align="center" valign="top"><a href="#"><img class="logo" editable="true" mc:edit="fm-01" src="images/Ravenry%20Logo%20Main.png" width="133" height="40" alt="Ravenry logo" style="display:block;"/></a></td>
+                <td align="center" valign="top"><a href="#"><img editable="true" mc:edit="fm-01" src="images/Ravenry Logo Main.png" width="133" height="40" alt="" /></a></td>
               </tr>
               <tr>
                 <td height="25" align="center" valign="top" style="font-size:25px; line-height:25px;">&nbsp;</td>
@@ -177,14 +121,14 @@ img.logo { display:block; margin:0 auto; }
    <tr>
     <td	 align="center" valign="top"><table width="600" border="0" align="center" cellpadding="0" cellspacing="0" class="two-left-inner">
 
-  <tr>
-    <td class="hero-sub" align="center" valign="top" style="font-family: 'Open Sans', sans-serif;" mc:edit="fm-05"><multiline>On-Demand Customised Industry Report</multiline></td>
+   <tr>
+    <td align="center" valign="top" style="font-size:16px; line-height:20px; color:#ffffff; text-transform:uppercase; font-weight: bold; font-family: 'Open Sans', sans-serif;" mc:edit="fm-05"><multiline>On-Demand Customised Industry Report</multiline></td>
   </tr>
   <tr>
      <td height="15" align="center" valign="top" style="font-size:15px; line-height:15px">&nbsp;</td>
   </tr>
    <tr>
-    <td class="hero-title" align="center" valign="top" style="font-family: 'Open Sans', sans-serif;" mc:edit="fm-06"><multiline>Thank You for Your Ravenry Purchase!</multiline></td>
+    <td align="center" valign="top" style="font-size:60px; line-height:60px; color:#ffffff; font-weight: bold; font-family: 'Open Sans', sans-serif;" mc:edit="fm-06"><multiline>Thank You for Your Report Purchase!</multiline></td>
   </tr>
    <tr>
      <td height="10" align="center" valign="top" style="font-size:10px; line-height:10px">&nbsp;</td>
@@ -252,8 +196,8 @@ img.logo { display:block; margin:0 auto; }
 </table>
 </td>
   </tr>
-  <tr>
-    <td class="body-text" align="left" valign="bottom" style="padding-top: 32px; font-weight: normal;" mc:edit="fm-40"><multiline>
+     <tr>
+    <td align="left" valign="bottom" style="padding-top: 24px;font-size:15px; line-height:22px; color:#6c6969; font-weight: normal; " mc:edit="fm-40"><multiline>
       We’ve received your order and our research team has started preparing your report for {{kbli_report_title}}.
 You’ll receive an email with your complete report package once it’s ready.
 
@@ -265,7 +209,7 @@ Every Ravenry report is crafted with verified data and local insights ensuring y
   <li>Our team will reach out to you to share more details and guide you on how to use your 2 complimentary expert questions effectively.
 </ul>
 <br>
-If you have any questions about your order, please reach out to our team at <a href="mailto:projects@theravenry.com" style="color: inherit; text-decoration: underline;">projects@theravenry.com</a>
+If you have any questions about your order, please reach out to our team at <a href="mailto:ask@theravenry.com" style="color: inherit; text-decoration: underline;">projects@theravenry.com</a>
 Thank you again for choosing Ravenry.
 We’re excited to help you uncover insights that drive real business decisions.
 </multiline></td>
@@ -354,8 +298,8 @@ We’re excited to help you uncover insights that drive real business decisions.
   </tr>
    <tr>
     <td align="center" valign="top"><table width="30" border="0" align="center" cellpadding="0" cellspacing="0">
-              <tr>
-    <td align="center" valign="top"><a href="#"><img editable="true" mc:edit="fm-20" src="images/work-part-arrow-image.png" width="30" height="25" alt="arrow" style="display:block;"/></a></td>
+  <tr>
+    <td align="center" valign="top"><a href="#"><img editable="true" mc:edit="fm-20" src="images/work-part-arrow-image.png" width="30" height="25" alt="" /></a></td>
   </tr>
 </table>
 </td>
@@ -406,7 +350,7 @@ We’re excited to help you uncover insights that drive real business decisions.
    <tr>
     <td align="center" valign="top"><table width="30" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td align="center" valign="top"><a href="https://theravenry.com" target="_blank"><img editable="true" mc:edit="fm-23" src="images/work-part-arrow-image.png" width="30" height="25" alt="arrow" style="display:block;"/></a></td>
+    <td align="center" valign="top"><a href="https://theravenry.com" target="_blank"><img editable="true" mc:edit="fm-23" src="images/work-part-arrow-image.png" width="30" height="25" alt="" /></a></td>
   </tr>
 </table>
 </td>
@@ -427,7 +371,7 @@ We’re excited to help you uncover insights that drive real business decisions.
 </td>
     <td width="400" class="two-left" align="center" valign="top"><table width="400" border="0" align="center" cellpadding="0" cellspacing="0" class="full">
   <tr>
-    <td align="center" valign="top"><a href="#"><img editable="true" mc:edit="fm-24" src="images/work-image-1.png" width="400" height="525" style="width:100%; height:auto; display:block;" alt="work image" /></a></td>
+    <td align="center" valign="top"><a href="#"><img editable="true" mc:edit="fm-24" src="images/work-image-1.png" width="400" height="525" style="width:100%; height:auto; display:block;" alt="" /></a></td>
   </tr>
 </table>
 </td>
@@ -452,7 +396,7 @@ We’re excited to help you uncover insights that drive real business decisions.
     <td align="center" valign="top"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="two-left-inner">
      
   <tr>
-  <td width="165"  class="footer-col two-left" align="center" valign="top"><table width="165" border="0" align="center" cellpadding="0" cellspacing="0">
+    <td width="165"  class="two-left" align="center" valign="top"><table width="165" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
     <td align="left" valign="top" style="font-size:12px; line-height:12px; font-weight: bold; color:#f9f9f9; font-family: 'Open Sans', sans-serif; padding-top: 16px;" mc:edit="fm-98"><multiline>FOLLOW US</multiline></td>
   </tr>
@@ -479,23 +423,23 @@ We’re excited to help you uncover insights that drive real business decisions.
     </table>
 </td>
     <td width="35" class="two-left" align="center" valign="top">&nbsp;</td>
-  <td width="200" class="footer-col two-left" align="center" valign="top"><table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+    <td width="200" class="two-left" align="center" valign="top"><table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
      <td height="15" align="center" valign="top" style="font-size:15px; line-height:15px;">&nbsp;</td>
   </tr>
   <tr>
-    <td align="left" valign="top" style="font-size:12px; line-height:12px; font-weight: bold; color:#f9f9f9; font-family: 'Open Sans', sans-serif;" mc:edit="fm-98"><multiline>LOCATION</multiline></td>
+    <td align="left" valign="top" style="font-size:12px; line-height:12px; font-weight: bold; padding-left:20px;color:#f9f9f9; font-family: 'Open Sans', sans-serif;" mc:edit="fm-98"><multiline>LOCATION</multiline></td>
   </tr>
   <tr>
    <td height="10" align="center" valign="top" style="font-size:10px; line-height:10px;">&nbsp;</td>
   </tr>
   <tr>
-    <td align="left" valign="top" style="font-size:12px; line-height:16px; color:#f9f9f9; font-family: 'Open Sans', sans-serif;" mc:edit="fm-99"><multiline>250 North Bridge Road. Singapore, 179101. </multiline></td>
+    <td align="left" valign="top" style="font-size:12px; line-height:16px;Padding-left:20px; color:#f9f9f9; font-family: 'Open Sans', sans-serif;" mc:edit="fm-99"><multiline>250 North Bridge Road. Singapore, 179101. </multiline></td>
   </tr>
 </table>
 </td>
     <td width="35" class="two-left" align="center" valign="top">&nbsp;</td>
-  <td width="165" class="footer-col two-left" align="center" valign="top"><table width="165" border="0" align="center" cellpadding="0" cellspacing="0">
+    <td width="165" class="two-left" align="center" valign="top"><table width="165" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
      <td height="15" align="center" valign="top" style="font-size:15px; line-height:15px;">&nbsp;</td>
   </tr>
